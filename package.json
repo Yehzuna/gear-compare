@@ -1,0 +1,14 @@
+{
+  "name": "gear-compare",
+  "version": "1.0.0",
+  "description": "Gear Compare for World of Warcraft",
+  "main": "index.js",
+  "repository": "https://github.com/Yehzuna/gear-compare.git",
+  "author": "Thomas BORUSZEWSKI <yehzuna@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^2.2.33",
+    "request": "^2.83.0"
+  },
+  "scripts": {}
+}
