@@ -1,4 +1,5 @@
 const request = require('request');
+const config = require('./config');
 
 const params = {
     key: 'xxx',

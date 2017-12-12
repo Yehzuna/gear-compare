@@ -1,6 +1,6 @@
 # Gear Scanner
 
-Gear Scanner for FFXIV
+Gear Scanner for World of Warcraft
 
 ## Installation
 
@@ -10,7 +10,6 @@ Requirements :
 - npm >=  5.4.2
 
 > https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
-
 
 DOC
 
