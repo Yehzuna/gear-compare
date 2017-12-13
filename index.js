@@ -2,21 +2,24 @@ const request = require('request');
 const config = require('./config');
 
 const params = {
-    key: 'xxx',
+    key: config.apiKey,
     locale: 'en_US',
     region: 'us',
-    realm: 'realm',
-    character: 'character',
+    realm: 'rm',
+    character: 'ch',
 };
 
-function character(...params) {
-    return 'https://us.api.battle.net/wow/character/test-realm/Peratryn?fields=items&locale=en_US&apikey='
+function character({key, locale, region, realm, character}) {
+    return `https://${region}.api.battle.net/wow/character/${realm}/${character}?fields=items&locale=${locale}&apikey=${key}`;
 }
 
 const options = {
     url: character(params),
 };
 
+console.log(options);
+
+/*
 request(options, (error, response, html) => {
     if (error) throw error;
 
@@ -25,3 +28,4 @@ request(options, (error, response, html) => {
         console.log('The file has been saved!');
     });
 });
+*/
