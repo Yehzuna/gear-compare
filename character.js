@@ -1,3 +1,4 @@
+const fs = require('fs');
 const request = require('request');
 const config = require('./config');
 
@@ -19,13 +20,11 @@ const options = {
 
 console.log(options);
 
-/*
-request(options, (error, response, html) => {
+request(options, (error, response, data) => {
     if (error) throw error;
 
-    fs.writeFile('json/realms.json', JSON.stringify(realms), (err) => {
+    fs.writeFile('cache/character.json', data, (err) => {
         if (err) throw err;
         console.log('The file has been saved!');
     });
 });
-*/
