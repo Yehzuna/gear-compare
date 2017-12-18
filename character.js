@@ -11,7 +11,7 @@ const params = {
 };
 
 function character({key, locale, region, realm, character}) {
-    return `https://${region}.api.battle.net/wow/character/${realm}/${character}?fields=items&locale=${locale}&apikey=${key}`;
+    return `https://${region}.api.battle.net/wow/character/${realm}/${character}?fields=items,talents&locale=${locale}&apikey=${key}`;
 }
 
 const options = {
